@@ -6,15 +6,19 @@
   --mist: #cfecf3;
   --mint: #daf9de;
   --cream: #f6ffdc;
-  --pink-soft: #fce4f0;
   --ink: #3a3540;
   --ink-soft: #5c5663;
+}
+
+/* Sitewide base: main pink on every page */
+html {
+  background-color: #f9b2d7;
 }
 
 body {
   font-family: "DM Sans", "Open Sans", sans-serif;
   color: var(--ink);
-  background-color: var(--cream);
+  background-color: #f9b2d7;
 }
 
 p {
@@ -85,21 +89,21 @@ p {
   gap: 0.5rem 0.75rem;
 }
 
-/* Sections */
+/* Section bands — palette: #CFECF3 · #DAF9DE · #F6FFDC (+ #F9B2D7 page base) */
 .section-band--mist {
-  background-color: var(--mist);
+  background-color: #cfecf3;
 }
 
 .section-band--mint {
-  background-color: var(--mint);
+  background-color: #daf9de;
 }
 
 .section-band--cream {
-  background-color: var(--cream);
+  background-color: #f6ffdc;
 }
 
 .section-band--pink {
-  background-color: var(--pink-soft);
+  background-color: #f9b2d7;
 }
 
 .section-title,
@@ -120,7 +124,7 @@ p {
   margin: 0 auto;
   padding: 2rem 1.5rem;
   border-radius: 24px;
-  background-color: #fff;
+  background-color: #f6ffdc;
   box-shadow: none;
   border: 1px solid rgba(249, 178, 215, 0.45);
 }
@@ -188,7 +192,7 @@ p {
   box-shadow: none;
 }
 
-/* Contact form on cream */
+/* Contact form on pink */
 #contact .form-control {
   border-radius: 12px;
   border-color: rgba(249, 178, 215, 0.5);
