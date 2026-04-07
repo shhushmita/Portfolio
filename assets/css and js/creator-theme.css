@@ -1,0 +1,217 @@
+/* Creator site — palette: #F9B2D7 #CFECF3 #DAF9DE #F6FFDC */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&display=swap");
+
+:root {
+  --pink: #f9b2d7;
+  --mist: #cfecf3;
+  --mint: #daf9de;
+  --cream: #f6ffdc;
+  --pink-soft: #fce4f0;
+  --ink: #3a3540;
+  --ink-soft: #5c5663;
+}
+
+body {
+  font-family: "DM Sans", "Open Sans", sans-serif;
+  color: var(--ink);
+  background-color: var(--cream);
+}
+
+p {
+  color: var(--ink-soft) !important;
+  opacity: 1 !important;
+}
+
+/* Filled buttons: pink fill reads best with dark label text */
+.btn-primary {
+  color: var(--ink) !important;
+  font-weight: 600;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  color: var(--ink) !important;
+}
+
+.btn-outline-primary {
+  font-weight: 600;
+}
+
+/* Hero: photo + flat tint overlay */
+.header {
+  background-image: url(../imgs/header.jpg);
+}
+
+.header .overlay {
+  background: rgba(249, 178, 215, 0.5) !important;
+  background-image: none !important;
+}
+
+.header-content .header-title .up {
+  color: var(--ink) !important;
+}
+
+.header-title {
+  color: var(--ink) !important;
+}
+
+.header .header-content .header-subtitle {
+  color: var(--ink-soft) !important;
+  opacity: 1 !important;
+}
+
+.header-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.75rem;
+}
+
+/* Sections */
+.section-band--mist {
+  background-color: var(--mist);
+}
+
+.section-band--mint {
+  background-color: var(--mint);
+}
+
+.section-band--cream {
+  background-color: var(--cream);
+}
+
+.section-band--pink {
+  background-color: var(--pink-soft);
+}
+
+.section-title,
+.section-subtitle {
+  color: #b84d78 !important;
+}
+
+.section-subtitle {
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 0.8rem !important;
+}
+
+/* Video / CTA */
+.tiktok-panel {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  border-radius: 24px;
+  background-color: #fff;
+  box-shadow: 0 18px 50px rgba(58, 53, 64, 0.08);
+  border: 1px solid rgba(249, 178, 215, 0.45);
+}
+
+.tiktok-panel h3 {
+  font-family: "Baloo Paaji", cursive;
+  color: #b84d78;
+}
+
+.tiktok-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  font-weight: 700;
+  background: var(--ink);
+  color: #fff !important;
+  text-decoration: none !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tiktok-cta:hover {
+  color: #fff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(58, 53, 64, 0.2);
+}
+
+.tiktok-cta svg {
+  flex-shrink: 0;
+}
+
+.tag-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-top: 1.25rem;
+}
+
+.tag-pills span {
+  display: inline-block;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  background: var(--cream);
+  color: var(--ink-soft);
+  border: 1px solid rgba(249, 178, 215, 0.6);
+}
+
+.tiktok-embed-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.tiktok-embed-wrap .tiktok-embed {
+  margin: 0 auto;
+}
+
+/* About section — grid layout (avoids fixed 400px flex min-width overflow) */
+#about .section-subtitle {
+  opacity: 1 !important;
+}
+
+.about-copy {
+  max-width: 38rem;
+}
+
+@media (min-width: 768px) {
+  .about-copy {
+    margin-left: 0;
+  }
+}
+
+.about-img {
+  border-radius: 20px;
+  box-shadow: 0 16px 40px rgba(58, 53, 64, 0.12);
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* Contact form on cream */
+#contact .form-control {
+  border-radius: 12px;
+  border-color: rgba(249, 178, 215, 0.5);
+}
+
+#contact .form-control:focus {
+  border-color: var(--pink);
+  box-shadow: 0 0 0 0.2rem rgba(249, 178, 215, 0.25);
+}
+
+/* Footer */
+.footer {
+  border-top: 1px solid rgba(249, 178, 215, 0.35);
+  padding-top: 1.5rem;
+}
+
+.footer .social-links a {
+  font-size: 1.15rem;
+}
+
+.tiktok-icon-link svg {
+  vertical-align: -0.15em;
+}
+
+/* Bootstrap progress “stripes” use a diagonal linear-gradient — keep bars flat */
+.progress-bar-striped {
+  background-image: none !important;
+}
