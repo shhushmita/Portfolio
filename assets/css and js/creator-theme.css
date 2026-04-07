@@ -193,3 +193,8 @@ p {
 .tiktok-icon-link svg {
   vertical-align: -0.15em;
 }
+
+/* Bootstrap progress “stripes” use a diagonal linear-gradient — keep bars flat */
+.progress-bar-striped {
+  background-image: none !important;
+}
