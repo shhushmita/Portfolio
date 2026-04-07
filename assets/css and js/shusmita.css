@@ -13,6 +13,7 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 @import url("https://fonts.googleapis.com/css?family=Baloo+Paaji|Open+Sans:300,300i,400,400i,600,600i,700,700i");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&display=swap");
 :root {
   --blue: #1e549f;
   --indigo: #F9B2D7;
@@ -12223,4 +12224,210 @@ pre .code {
 
 .section-lg {
   padding: 100px 0 !important;
+}
+
+/* ========== Site overrides (creator theme, single file) ========== */
+:root {
+  --pink: #f9b2d7;
+  --mist: #cfecf3;
+  --mint: #daf9de;
+  --cream: #f6ffdc;
+  --ink: #3a3540;
+  --ink-soft: #5c5663;
+}
+
+html {
+  background-color: #f9b2d7;
+}
+
+body {
+  font-family: "DM Sans", "Open Sans", sans-serif;
+  color: var(--ink);
+  background-color: #f9b2d7;
+}
+
+p {
+  color: var(--ink-soft) !important;
+  opacity: 1 !important;
+}
+
+.btn-primary {
+  color: var(--ink) !important;
+  font-weight: 600;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  color: var(--ink) !important;
+}
+
+.btn-outline-primary {
+  font-weight: 600;
+}
+
+.header {
+  background-color: var(--pink) !important;
+  background-image: none !important;
+}
+
+.header .overlay {
+  display: none !important;
+}
+
+.custom-navbar:not(.affix) .nav .item .link:hover,
+.custom-navbar:not(.affix) .nav .item .link.active {
+  color: var(--cream) !important;
+}
+
+.header .btn-outline-primary {
+  color: var(--ink) !important;
+  border-color: var(--ink) !important;
+}
+
+.header .btn-outline-primary:hover,
+.header .btn-outline-primary:focus {
+  color: var(--ink) !important;
+  background-color: var(--cream) !important;
+  border-color: var(--ink) !important;
+}
+
+.header-content .header-title .up {
+  color: var(--ink) !important;
+}
+
+.header-title {
+  color: var(--ink) !important;
+}
+
+.header .header-content .header-subtitle {
+  color: var(--ink-soft) !important;
+  opacity: 1 !important;
+}
+
+.header-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.75rem;
+}
+
+.section {
+  background-color: #f9b2d7;
+}
+
+.section-band--mist,
+.section-band--mint,
+.section-band--cream,
+.section-band--pink {
+  background-color: #f9b2d7;
+}
+
+.section-title,
+.section-subtitle {
+  color: #b84d78 !important;
+}
+
+.section-subtitle {
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 0.8rem !important;
+}
+
+.tiktok-panel {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  border-radius: 24px;
+  background-color: #f9b2d7;
+  box-shadow: none;
+  border: 1px solid rgba(58, 53, 64, 0.12);
+}
+
+.tiktok-panel h3 {
+  font-family: "Baloo Paaji", cursive;
+  color: #b84d78;
+}
+
+.tiktok-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  font-weight: 700;
+  background: var(--ink);
+  color: #fff !important;
+  text-decoration: none !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tiktok-cta:hover {
+  color: #fff !important;
+  transform: translateY(-1px);
+  box-shadow: none;
+}
+
+.tiktok-cta svg {
+  flex-shrink: 0;
+}
+
+.tag-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-top: 1.25rem;
+}
+
+.tag-pills span {
+  display: inline-block;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  background: var(--cream);
+  color: var(--ink-soft);
+  border: 1px solid rgba(249, 178, 215, 0.6);
+}
+
+.tiktok-embed-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.tiktok-embed-wrap .tiktok-embed {
+  margin: 0 auto;
+}
+
+.about-img {
+  border-radius: 20px;
+  box-shadow: none;
+}
+
+#contact .form-control {
+  border-radius: 12px;
+  border-color: rgba(249, 178, 215, 0.5);
+}
+
+#contact .form-control:focus {
+  border-color: var(--pink);
+  box-shadow: 0 0 0 0.2rem rgba(249, 178, 215, 0.25);
+}
+
+.footer {
+  border-top: 1px solid rgba(249, 178, 215, 0.35);
+  padding-top: 1.5rem;
+}
+
+.footer .social-links a {
+  font-size: 1.15rem;
+}
+
+.tiktok-icon-link svg {
+  vertical-align: -0.15em;
+}
+
+.progress-bar-striped {
+  background-image: none !important;
 }
