@@ -11210,8 +11210,7 @@ p {
   text-align: center;
   visibility: hidden;
   opacity: 0;
-  background-image: -webkit-linear-gradient(bottom, #e1dfed 0%, rgba(225, 223, 237, 0.7) 99%, rgba(225, 223, 237, 0.8) 100%);
-  background-image: linear-gradient(to top, #e1dfed 0%, rgba(225, 223, 237, 0.7) 99%, rgba(225, 223, 237, 0.8) 100%);
+  background-color: rgba(207, 236, 243, 0.92);
   -webkit-transition: all, 0.3s;
   transition: all, 0.3s;
   width: 0;
@@ -12076,8 +12075,7 @@ pre .code {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: -webkit-linear-gradient(bottom, #fff 0%, rgba(249, 178, 215, 0.35) 99%, rgba(249, 178, 215, 0.5) 100%);
-  background-image: linear-gradient(to top, #fff 0%, rgba(249, 178, 215, 0.35) 99%, rgba(249, 178, 215, 0.5) 100%);
+  background-color: rgba(249, 178, 215, 0.5);
 }
 
 .header .header-content {
